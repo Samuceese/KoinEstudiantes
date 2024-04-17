@@ -7,9 +7,9 @@ import estudiantes.errors.EstudianteError
 import estudiantes.models.Estudiante
 import estudiantes.repositories.EstudiantesRepository
 
-class PersonasServiceImpl (
+class EstudiantesServiceImpl (
     private val estudiantesRepository: EstudiantesRepository
-) : PersonasService {
+) : EstudiantesService {
     override fun getAll(): Result<List<Estudiante>, EstudianteError> {
         println("Obteniendo todos los productos")
         return Ok(estudiantesRepository.findAll())

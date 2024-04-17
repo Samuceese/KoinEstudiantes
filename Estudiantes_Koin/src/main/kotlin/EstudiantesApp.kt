@@ -1,10 +1,10 @@
 import estudiantes.models.Estudiante
-import estudiantes.services.PersonasService
+import estudiantes.services.EstudiantesService
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
-class PersonasApp : KoinComponent {
-    val contPorDefecto : PersonasService by inject()
+class EstudiantesApp : KoinComponent {
+    val contPorDefecto : EstudiantesService by inject()
 
 
     fun run() {

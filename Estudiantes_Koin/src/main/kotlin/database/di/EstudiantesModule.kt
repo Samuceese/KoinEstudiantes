@@ -8,6 +8,7 @@ import org.koin.dsl.module
 import estudiantes.repositories.EstudiantesRepository
 import estudiantes.repositories.EstudiantesRepositoryImpl
 import estudiantes.services.EstudiantesService
+import estudiantes.services.EstudiantesServiceImpl
 
 
 val estudiantesModule= module {
@@ -25,7 +26,7 @@ val estudiantesModule= module {
 
 
 
-    factory<EstudiantesService> { EstudiantesServiceImpl(get(),get()) }
+    factory<EstudiantesService> { EstudiantesServiceImpl(get()) }
 
 
 }
